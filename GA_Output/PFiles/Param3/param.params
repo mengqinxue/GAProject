@@ -1,0 +1,4 @@
+parent.0 = /home/gpsr/NetBeansProjects/GA_Output/GA_tmpfile.params
+pop.subpop.0.size = 16
+eval.problem.rs = /home/gpsr/NetBeansProjects/GA_Output/PFiles/Param3/
+stat.child.0.generation-log-folder = /home/gpsr/NetBeansProjects/GA_Output/PFiles/Param3/summary/

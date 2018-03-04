@@ -1,0 +1,14 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: 0.2623383104801178
+W S Y S H W D Z Z A B X C X C
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: 0.5866817831993103
+E A B J O R R Q N D J J H F K

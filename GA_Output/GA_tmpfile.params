@@ -1,0 +1,61 @@
+verbosity	= 0
+
+breedthreads	= 1
+evalthreads	= 1
+seed.0		= 1
+
+state		= ec.simple.SimpleEvolutionState
+
+pop		= ec.Population
+#pop.file        = pop.stat
+#pop.subpop.0.extra-behavior = truncate / wrap / fill
+
+init		= ec.simple.SimpleInitializer
+finish		= ec.simple.SimpleFinisher
+breed		= ec.simple.SimpleBreeder
+eval		= ec.simple.SimpleEvaluator
+stat		= ec.simple.SimpleStatistics
+exch		= ec.simple.SimpleExchanger
+
+generations		= 5
+quit-on-run-complete	= true
+checkpoint		= false
+prefix			= ec
+checkpoint-modulo	= 1
+
+stat.file		= filexxxx.txt
+
+pop.subpops		= 1
+pop.subpop.0		= ec.Subpopulation
+
+pop.subpop.0.size 		= 10
+pop.subpop.0.duplicate-retries 	= 0
+pop.subpop.0.species 		= ec.vector.GeneVectorSpecies
+pop.subpop.0.species.ind	= ec.vector.GeneVectorIndividual
+pop.subpop.0.species.fitness 	= ec.simple.SimpleFitness
+
+pop.subpop.0.species.genome-size	= 15
+pop.subpop.0.species.crossover-type	= two
+pop.subpop.0.species.crossover-prob	= 1.0
+pop.subpop.0.species.mutation-prob	= 0.05
+
+pop.subpop.0.species.pipe			= ec.vector.breed.VectorMutationPipeline
+pop.subpop.0.species.pipe.source.0		= ec.vector.breed.VectorCrossoverPipeline
+pop.subpop.0.species.pipe.source.0.source.0	= ec.select.TournamentSelection
+pop.subpop.0.species.pipe.source.0.source.1	= ec.select.TournamentSelection
+
+pop.subpop.0.species.gene = ga.app.app1.CharVectorGene
+pop.subpop.0.species.gene.alphabet = ABCDEFGHIJKLMNOPQRSTUVWXYZ
+select.tournament.size		= 2
+
+# Add our statistics object
+stat.num-children                  = 1
+stat.child.0                       = ga.app.app1.MyStatistics
+stat.child.0.pop-file              = pop1.stat
+stat.child.0.info-file             = info.stat
+#stat.child.0.replace-with-best    = true
+#stat.child.0.tmp-file-path        = D:\\tmp_best.txt
+stat.child.0.generation-log-folder = D:\\workplace\\
+
+eval.problem	       = ga.app.app1.exp1
+eval.problem.rs        = /home/gpsr/NetBeansProjects/GARunningSpace/summary/

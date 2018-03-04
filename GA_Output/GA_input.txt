@@ -1,0 +1,6 @@
+
+# This is my input file for test
+
+loop:pop.subpop.0.size = 10, 20, 2
+
+# end

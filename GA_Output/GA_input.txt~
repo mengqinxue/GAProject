@@ -1,0 +1,8 @@
+
+# This is my input file for test
+
+loop:my-name = firstname, middlename, last name
+loop:my-age  = 10, 16, 2
+loop:my-job  = IT, accountant, teacher
+
+# end

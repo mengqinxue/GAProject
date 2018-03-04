@@ -1,0 +1,19 @@
+# 
+parent.0 =  C:/Users/user/Desktop/GA Project/GA Project 23/build/classes/ga/test/tc01/tc01.params
+
+# 
+breed                      = ec.es.MuCommaLambdaBreeder
+es.mu.0                    = 10
+es.lambda.0                = 100
+pop.subpop.0.pipe          = ec.vector.VectorMutation
+pop.subpop.0.pipe.source.0 = ec.es.ESSelection
+
+#
+pop.subpop.0.species     = ec.vector.FloatVectorSpecies
+pop.subpop.0.species.ind = ec.vector.DoubleVectorIndividual
+
+pop.subpop.0.species.mutation-type  = gauss
+pop.subpop.0.species.mutation-stdev = 0.01
+pop.subpop.0.species.mutation-prob  = 1.0 
+
+eval.problem  = ga.test.tc02.tc02

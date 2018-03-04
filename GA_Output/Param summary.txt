@@ -1,0 +1,11 @@
+*---------------------------------------------------------
+               The summary of GA Parramater files         
+*---------------------------------------------------------
+There are 6 param files to be generated.   
+*---------------------------------------------------------
+Param 0 : pop.subpop.0.size = 10;
+Param 1 : pop.subpop.0.size = 12;
+Param 2 : pop.subpop.0.size = 14;
+Param 3 : pop.subpop.0.size = 16;
+Param 4 : pop.subpop.0.size = 18;
+Param 5 : pop.subpop.0.size = 20;
